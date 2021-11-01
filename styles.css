@@ -1,0 +1,113 @@
+body {
+    background-image: url("./images/background.png");
+    background-size: cover;
+    padding-left: 20rem;
+    padding-right: 5rem;
+    padding-top: 7rem;
+    font-family: 'Odibee Sans', cursive;
+}
+
+#my-canvas {
+    background-color: #222222e8;
+    display: none;
+    margin-bottom: 50px;
+    margin-left: 6rem;
+}
+
+#start-screen {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #222222e8;
+    width: 80%;
+}
+
+#start-screen img {
+    height: 15rem;
+    padding: 3rem;
+}
+
+.instructions {
+    flex-direction: column;
+    text-align: center;
+}
+
+.instructions h2 {
+    font-size: 6rem ;
+    text-shadow: 5px 5px rgb(83, 83, 83);
+    margin-top: 1rem;
+} 
+
+.instructions p {
+    font-size: 3rem;
+}
+
+#start-btn {
+    width: 80%;
+    align-content: flex-end;
+    margin-top: 4rem;
+    height: 5rem;
+    background-color: #222222e8;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Odibee Sans', cursive ;    
+}
+
+#restart-btn {
+    display: none;
+}
+
+#scores {
+    display: none;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+#scores h1, 
+h2 {
+    margin: 0;
+    font-size: 5rem;
+    color: white;
+
+}
+
+.levels {
+    flex-direction: column;
+    text-align: center;
+}
+
+.levels h1 {
+    margin-bottom: 6rem;
+}
+
+.levels h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#level-2{
+    display: none;
+    width: 10rem;
+    background-color: #8f3636e8;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Odibee Sans', cursive;
+    margin-left: 5rem;
+}
+
+#level-3 {
+    display: none;
+    width: 10rem;
+    background-color: #8f3636e8;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Odibee Sans', cursive;
+    margin-left: 5rem;
+}
+
+
+
+
+
+
+
