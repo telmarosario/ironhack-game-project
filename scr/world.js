@@ -27,7 +27,7 @@ class World {
             this.y < eachVirus.y + eachVirus.height &&
             this.height + this.y > eachVirus.y) {
                 virusArray.splice(index, 1);
-                points.innerText = Number(points.innerText) -1;  
+                points.innerText = Number(points.innerText) -4;  
                                          
             }
     };
@@ -38,7 +38,7 @@ class World {
             this.y < eachMask.y + eachMask.height &&
             this.height + this.y > eachMask.y) {
                 maskArray.splice(index, 1);  
-                points.innerText = Number(points.innerText) +5;               
+                points.innerText = Number(points.innerText) +2;               
             }
     };
 
@@ -48,7 +48,7 @@ class World {
             this.y < eachVaccine.y + eachVaccine.height &&
             this.height + this.y > eachVaccine.y) {
                 vaccineArray.splice(index, 1);   
-                points.innerText = Number(points.innerText) +7;
+                points.innerText = Number(points.innerText) +5;
                 
             }
     };

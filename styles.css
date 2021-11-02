@@ -34,7 +34,9 @@ body {
 
 .instructions h2 {
     font-size: 6rem ;
-    text-shadow: 5px 5px rgb(83, 83, 83);
+    letter-spacing: 0.03em;
+    text-shadow: 5px 5px #e91e63
+    ;
     margin-top: 1rem;
 } 
 
@@ -87,24 +89,55 @@ h2 {
 
 #level-2{
     display: none;
-    width: 10rem;
-    background-color: #8f3636e8;
+    width: 11rem;
+    background-color: #e91e63;
     color: white;
-    font-size: 4rem;
+    font-size: 7rem;
     font-family: 'Odibee Sans', cursive;
-    margin-left: 5rem;
+    margin-left: 5.7rem;
+    margin-top: 5rem;
+    text-shadow: 5px 5px rgb(44, 43, 43);
+    letter-spacing: 0.02em;
 }
 
 #level-3 {
     display: none;
-    width: 10rem;
-    background-color: #8f3636e8;
+    width: 11rem;
+    background-color: #e91e63;
     color: white;
-    font-size: 4rem;
+    font-size: 7rem;
     font-family: 'Odibee Sans', cursive;
-    margin-left: 5rem;
+    margin-left: 5.7rem;
+    margin-top: 5rem;
+    text-shadow: 5px 5px rgb(44, 43, 43);
+    letter-spacing: 0.02em; 
 }
 
+#gameover-screen {
+    display: none;
+    color: white;
+    background-color: #222222e8;
+    width: 80%;
+    font-family: 'Odibee Sans', cursive;
+    flex-direction: column;
+    padding: 1rem 4rem 4rem 4rem;
+    text-align: center;
+}
+
+#gameover-screen img {
+    height: 8rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+#gameover-screen h1 {
+    font-size: 8rem;
+    text-shadow: 5px 5px rgb(44, 43, 43);
+}
+
+#gameover-screen h2 {
+    font-size: 5rem;
+    text-shadow: 5px 5px rgb(44, 43, 43);
+}
 
 
 

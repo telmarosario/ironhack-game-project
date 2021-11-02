@@ -48,7 +48,17 @@ class Game {
             levelTwo.style.display = "none";
             levelThree.style.display = "flex";
         } 
-    };  
+    }; 
+
+    isGameOver = () => {
+        if (points.innerText < 0){
+            this.isGameStopped = true;
+            ctx.clearRect(0, 0,canvas.width, canvas.height);
+            canvas.style.display = "none";
+            scoreScreen.style.display = "none";
+            gameOverScreen.style.display = "flex";
+        }
+    };
 
     gameLoop = () => {
         //* 1. Clear the canvas
@@ -62,7 +72,7 @@ class Game {
         this.virusArr.forEach((eachVirus) =>eachVirus.virusMove(5));
         this.spawnVirus();
         } else if (this.levelNumber == 3){
-            this.virusArr.forEach((eachVirus) =>eachVirus.virusMove(5));
+            this.virusArr.forEach((eachVirus) =>eachVirus.virusMove(6));
             this.spawnVirus();
         }
 
@@ -94,6 +104,7 @@ class Game {
 
         //* Scores and Levels
        this.checkLevel();
+       this.isGameOver();
         //* 4. Animation frame and game logic
         if(!this.isGameStopped){
         requestAnimationFrame(this.gameLoop);
