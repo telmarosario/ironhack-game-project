@@ -7,6 +7,7 @@ class Game {
         this.vaccineArr = [new Vaccine()];
         this.isGameStopped = false;
         this.levelNumber = levelNumber;
+        this.gameOverAudio = new Audio('sounds/gameover.mp3');
     }
 
 
@@ -57,6 +58,9 @@ class Game {
             canvas.style.display = "none";
             scoreScreen.style.display = "none";
             gameOverScreen.style.display = "flex";
+            bgMusic.pause();
+            bgMusic.currentTime = 0;
+            this.gameOverAudio.play();
         }
     };
 

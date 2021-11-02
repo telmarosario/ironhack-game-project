@@ -7,6 +7,8 @@ class World {
         this.x = canvas.width / 2.5;
         this.y = 600;
         this.speed = 20;
+        this.audioVirus = new Audio('sounds/minus_point.mp3');
+        this.audioMaskVacc = new Audio('sounds/add_point.mp3');
     };
 
     drawWorld = () => {
@@ -28,7 +30,7 @@ class World {
             this.height + this.y > eachVirus.y) {
                 virusArray.splice(index, 1);
                 points.innerText = Number(points.innerText) -4;  
-                                         
+                this.audioVirus.play();                         
             }
     };
 
@@ -38,7 +40,8 @@ class World {
             this.y < eachMask.y + eachMask.height &&
             this.height + this.y > eachMask.y) {
                 maskArray.splice(index, 1);  
-                points.innerText = Number(points.innerText) +2;               
+                points.innerText = Number(points.innerText) +2;
+                this.audioMaskVacc.play();               
             }
     };
 
@@ -49,6 +52,7 @@ class World {
             this.height + this.y > eachVaccine.y) {
                 vaccineArray.splice(index, 1);   
                 points.innerText = Number(points.innerText) +5;
+                this.audioMaskVacc.play();
                 
             }
     };
